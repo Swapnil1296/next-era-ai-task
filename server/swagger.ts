@@ -17,6 +17,15 @@ const options = {
         url: 'http://localhost:8080',
       },
     ],
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: 'http',
+          scheme: 'bearer',
+          bearerFormat: 'JWT',
+        },
+      },
+    },
   },
   apis: ['./src/routes/*.ts', './src/controllers/*.ts'] 
 };

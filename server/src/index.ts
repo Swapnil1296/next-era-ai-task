@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import { setupSwagger } from '../swagger';
 import { corsOptions } from './config';
 import authRoutes from './routes/auth';
+import taskRoutes from './routes/task';
 
 dotenv.config();
 const app = express();
@@ -14,6 +15,7 @@ setupSwagger(app);
 
 //routes 
 app.use('/api/auth', authRoutes);
+app.use('/api/task', taskRoutes);
 
 
 
