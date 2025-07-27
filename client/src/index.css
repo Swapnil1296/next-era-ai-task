@@ -7,8 +7,7 @@
 }
 
 
-html,body {
-  background-color: var(--main-color);
-  color: var(--font-color);
-  font-family: var(--font-style);
+html, body, #root {
+  height: 100%;
+  margin: 0;
 }
