@@ -1,1 +1,14 @@
 
+@import "tailwindcss";
+:root{
+    --main-color: rgb(54, 77, 77);
+    --font-color: rgb(217, 209, 209);
+    --font-style: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+html,body {
+  background-color: var(--main-color);
+  color: var(--font-color);
+  font-family: var(--font-style);
+}
